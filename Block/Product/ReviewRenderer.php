@@ -57,7 +57,7 @@ class ReviewRenderer extends \Magento\Review\Block\Product\ReviewRenderer implem
         if (null === $product->getRatingSummary() && !$displayIfNoReviews) {
             return '';
         }
-        // pick template among available
+      
         if (empty($this->_availableTemplates[$templateType])) {
             $templateType = self::DEFAULT_VIEW;
         }
